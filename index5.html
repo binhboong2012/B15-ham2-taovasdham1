@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body onload="duyetMang(wordInput)">
+<script>
+    let wordInput = prompt('Nhập chòm sao');
+    let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe' ,'Regulus'];
+    let arr2 = ['Ursa Minor','Tarurus', 'Cygnus', 'Lyra', 'Aquila','Ursa Major','Leo'];
+    function duyetMang(wordInput) {
+        if(arr1.includes(wordInput)) {
+            document.write(arr2[arr1.indexOf(wordInput)]);
+        } else {
+            alert(`ko tìm thấy`);
+        }
+    }
+</script>
+
+</body>
+</html>
